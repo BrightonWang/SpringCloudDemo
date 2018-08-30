@@ -6,7 +6,20 @@
 
     <groupId>cn.brighton.springcloud</groupId>
     <artifactId>DalstonDemo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
+    <!--<parent>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-parent</artifactId>-->
+        <!--<version>1.5.4.RELEASE</version>-->
+    <!--</parent>-->
+
+    <modules>
+        <!--模块-->
+        <module>eureka-client</module>
+        <module>eureka-server</module>
+        <module>eureka-consumer</module>
+    </modules>
 
 </project>

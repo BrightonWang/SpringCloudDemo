@@ -2,15 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--<parent>-->
+        <!--<artifactId>DalstonDemo</artifactId>-->
+        <!--<groupId>cn.brighton.springcloud</groupId>-->
+        <!--<version>1.0.0</version>-->
+    <!--</parent>-->
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.brighton.springcloud</groupId>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-consumer</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>eureka-client</name>
-    <description>SpringCloud In Active</description>
+    <name>eureka-consumer</name>
+    <description>Spring Cloud In Action</description>
+
+    <!--<artifactId>eureka-consumer</artifactId>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -33,6 +41,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web</artifactId>-->
+            <!--<version>5.0.8.RELEASE</version>-->
+            <!--<scope>compile</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <dependencyManagement>
@@ -49,10 +67,10 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+          <plugin>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-maven-plugin</artifactId>
+          </plugin>
         </plugins>
     </build>
 </project>
