@@ -19,6 +19,7 @@
         <!--模块-->
         <module>eureka-client</module>
         <module>eureka-server</module>
+        <module>consul-client</module>
         <module>eureka-consumer</module>
         <module>eureka-consumer-ribbon</module>
     </modules>

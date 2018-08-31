@@ -29,7 +29,8 @@ public class DcController {
 //        String url = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/dc";
 //        System.out.println(url);
 //        return restTemplate.getForObject(url,String.class);
-        return restTemplate.getForObject("http://eureka-client/dc",String.class);
+//        return restTemplate.getForObject("http://eureka-client/dc",String.class);
+        return restTemplate.getForObject("http://consul-client/dc",String.class);
     }
 
 
