@@ -18,17 +18,18 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class DcController {
     //springcloud提供的负载均衡器客户端接口实现服务消费
-    @Autowired
-    LoadBalancerClient loadBalancerClient;
+//    @Autowired
+//    LoadBalancerClient loadBalancerClient;
     @Autowired
     RestTemplate restTemplate;
 
     @GetMapping("/consumer")
     public  String dc(){
-        ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
-        String url = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/dc";
-        System.out.println(url);
-        return restTemplate.getForObject(url,String.class);
+//        ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
+//        String url = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/dc";
+//        System.out.println(url);
+//        return restTemplate.getForObject(url,String.class);
+        return restTemplate.getForObject("http://eureka-client/dc",String.class);
     }
 
 
