@@ -22,6 +22,7 @@
         <module>consul-client</module>
         <module>eureka-consumer</module>
         <module>eureka-consumer-ribbon</module>
+        <module>consul-consumer</module>
     </modules>
 
 </project>
