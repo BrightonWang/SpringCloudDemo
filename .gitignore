@@ -1,0 +1,9 @@
+/DalstonDemo/consul-client/target
+/DalstonDemo/consul-consumer/target
+/DalstonDemo/eureka-client/target
+/DalstonDemo/eureka-consumer/target
+/DalstonDemo/eureka-consumer-ribbon/target
+/DalstonDemo/eureka-server/target
+/DalstonDemo/eureka-server/.idea
+/DalstonDemo/*.log
+/DalstonDemo/.idea
