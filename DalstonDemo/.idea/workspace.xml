@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6765c17e-0a53-454e-9059-b69080042c47" name="Default" comment="提交最新consul-client代码">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-client/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consul-client/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/cn/brighton/springcloud/Application.java" beforeDir="false" />
-    </list>
+    <list default="true" id="6765c17e-0a53-454e-9059-b69080042c47" name="Default" comment="提交最新consul-client代码" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/eureka-client/target/" />
@@ -232,168 +228,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consul-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-consumer-ribbon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-consumer-ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-consumer-ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-consumer-ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-consumer-ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DalstonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DalstonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
@@ -580,7 +415,7 @@
       <workItem from="1535614125914" duration="530000" />
       <workItem from="1535614684786" duration="16597000" />
       <workItem from="1535701293709" duration="10517000" />
-      <workItem from="1536051434173" duration="364000" />
+      <workItem from="1536051434173" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="提交eureka-client和eureka-consumer">
       <created>1535619858670</created>
@@ -617,15 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535960036315</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="提交最新consul-client代码">
+      <created>1536051934469</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536051934469</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28008000" />
+    <option name="totallyTimeSpent" value="28197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -672,7 +513,8 @@
     <MESSAGE value="提交consul-client" />
     <MESSAGE value="提交consul-consumer" />
     <MESSAGE value="修改application.properties, consul服务可注册但loadBalancerClient无法发现该服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改application.properties, consul服务可注册但loadBalancerClient无法发现该服务" />
+    <MESSAGE value="提交最新consul-client代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交最新consul-client代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
