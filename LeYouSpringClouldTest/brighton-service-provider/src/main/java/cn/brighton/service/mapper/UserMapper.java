@@ -1,7 +1,7 @@
-package cn.brighton.mapper;
+package cn.brighton.service.mapper;
 
 
-import cn.brighton.pojo.User;
+import cn.brighton.service.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

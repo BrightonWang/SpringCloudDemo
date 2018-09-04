@@ -1,8 +1,8 @@
-package cn.brighton.service;
+package cn.brighton.service.service;
 
 
-import cn.brighton.mapper.UserMapper;
-import cn.brighton.pojo.User;
+import cn.brighton.service.mapper.UserMapper;
+import cn.brighton.service.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

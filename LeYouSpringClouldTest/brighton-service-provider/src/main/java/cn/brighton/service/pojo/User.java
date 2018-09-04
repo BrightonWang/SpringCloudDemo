@@ -1,4 +1,4 @@
-package cn.brighton.pojo;
+package cn.brighton.service.pojo;
 
 
 import javax.persistence.GeneratedValue;
@@ -29,7 +29,7 @@ public class User {
     private String password;
 
     //姓名
-    private Integer name;
+    private String name;
 
     //年龄
     private Integer age;
@@ -70,11 +70,11 @@ public class User {
         this.password = password;
     }
 
-    public Integer getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Integer name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -101,41 +101,41 @@ public class User {
     }
 
     public void setBirthday(Date birthday) {
-//        this.birthday = birthday;
-        if (birthday == null){
-            birthday = null;
-        }else {
-            birthday = (Date)birthday.clone();
-        }
+        this.birthday = birthday;
+//        if (birthday == null){
+//            birthday = null;
+//        }else {
+//            birthday = (Date)birthday.clone();
+//        }
     }
 
     public Date getCreated() {
-//        return created;
-        return created == null ? null :(Date)created.clone();
+        return created;
+//        return created == null ? null :(Date)created.clone();
     }
 
 
     public void setCreated(Date created) {
-//        this.created = created;
-        if(created == null){
-            created = null;
-        }else {
-            created = (Date)created.clone();
-        }
+        this.created = created;
+//        if(created == null){
+//            created = null;
+//        }else {
+//            created = (Date)created.clone();
+//        }
     }
 
 
     public Date getUpdated() {
-//        return updated;
-        return updated == null ? null : (Date)updated.clone();
+        return updated;
+//        return updated == null ? null : (Date)updated.clone();
     }
 
     public void setUpdated(Date updated) {
-//        this.updated = updated;
-        if (updated == null){
-            updated = null;
-        }else {
-            updated = (Date)updated.clone();
-        }
+        this.updated = updated;
+//        if (updated == null){
+//            updated = null;
+//        }else {
+//            updated = (Date)updated.clone();
+//        }
     }
 }

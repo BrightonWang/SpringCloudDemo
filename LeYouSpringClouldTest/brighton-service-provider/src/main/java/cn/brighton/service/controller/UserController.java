@@ -1,8 +1,8 @@
-package cn.brighton.controller;
+package cn.brighton.service.controller;
 
 
-import cn.brighton.pojo.User;
-import cn.brighton.service.UserService;
+import cn.brighton.service.pojo.User;
+import cn.brighton.service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version $Id: <className>, v <versionName> 17:34 2018/9/4 lenovo Exp $
  */
 @RestController
-@RequestMapping("User")
+@RequestMapping("user")
 public class UserController {
     @Autowired
     private UserService userService;
