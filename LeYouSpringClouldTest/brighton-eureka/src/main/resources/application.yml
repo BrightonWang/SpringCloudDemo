@@ -1,12 +1,19 @@
 server:
-  port: 10087 #¶Ë¿Ú
+  port: 10087 #ç«¯å£
 spring:
   application:
-    name: eureka-server #Ó¦ÓÃÃû³Æ,»áÔÚEurekaÖĞÏÔÊ¾
+    name: eureka-server #åº”ç”¨åç§°,ä¼šåœ¨Eurekaä¸­æ˜¾ç¤º
 eureka:
   client:
-#    register-with-eureka: false #ÊÇ·ñ×¢²á×Ô¼ºµÄĞÅÏ¢µ½EurekaServer,Ä¬ÈÏÊÇtrue
-#    fetch-registry: false #ÊÇ·ñÀ­È¡ÆäËû·şÎñµÄĞÅÏ¢,Ä¬ÈÏÊÇtrue
-    service-url: #EurekaServerµÄµØÖ·,ÏÖÔÚÊÇ×Ô¼ºµÄµØÖ·,Èç¹ûÊÇ¼¯Èº,ĞèÒª¼ÓÉÏÆäËûServerµÄµØÖ·
+#    register-with-eureka: false #æ˜¯å¦æ³¨å†Œè‡ªå·±çš„ä¿¡æ¯åˆ°EurekaServer,é»˜è®¤æ˜¯true
+#    fetch-registry: false #æ˜¯å¦æ‹‰å–å…¶ä»–æœåŠ¡çš„ä¿¡æ¯,é»˜è®¤æ˜¯true
+    service-url: #EurekaServerçš„åœ°å€,ç°åœ¨æ˜¯è‡ªå·±çš„åœ°å€,å¦‚æœæ˜¯é›†ç¾¤,éœ€è¦åŠ ä¸Šå…¶ä»–Serverçš„åœ°å€
       defaultZone: http://127.0.0.1:10086/eureka
 #      defaultZone: http://127.0.0.1:${server.prot}/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 10 #10ç§’å³è¿‡æœŸ
+    lease-renewal-interval-in-seconds: 5 #5ç§’ä¸€æ¬¡å¿ƒè·³
+  server:
+    eviction-interval-timer-in-ms: 1000 #æ¯éš”ä¸€ç§’å¯¹å¤±æ•ˆæœåŠ¡å‰”é™¤
+    enable-self-preservation: false  #å…³é—­è‡ªæˆ‘ä¿æŠ¤æ¨¡å¼(ç¼ºçœä¸ºæ‰“å¼€)
+
