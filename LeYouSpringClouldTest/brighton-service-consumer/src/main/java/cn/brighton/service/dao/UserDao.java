@@ -2,6 +2,7 @@ package cn.brighton.service.dao;
 
 
 import cn.brighton.service.pojo.User;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -25,6 +26,7 @@ public class UserDao {
     @Autowired
     private DiscoveryClient discoveryClient; //eureka客户端,可以获取到eureka中的服务信息
 
+    @HystrixCommand(fallbackMethod = "queryUserByIdFallback")
     public User queryUserById(Long id){
 //        String url = "http://localhost:8081/user/"+id;
 //        return this.restTemplate.getForObject(url,User.class);
