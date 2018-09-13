@@ -1,6 +1,7 @@
 package cn.brighton.service.service;
 
 
+import cn.brighton.service.dao.UserClient;
 import cn.brighton.service.dao.UserDao;
 import cn.brighton.service.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +21,16 @@ import java.util.List;
  */
 @Service
 public class UserService {
-    @Autowired
-    private UserDao userDao;
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private UserDao userDao;
+//    @Autowired
+//    private RestTemplate restTemplate;
+//
+//    @Autowired
+//    private DiscoveryClient discoveryClient;
 
     @Autowired
-    private DiscoveryClient discoveryClient;
+    private UserClient userClient;
 
     public List<User> queryUserByIds(List<Long> ids){
         List<User> users = new ArrayList<>();
@@ -42,10 +46,18 @@ public class UserService {
 //                e.printStackTrace();
 //            }
 //        });
-        for (Long id : ids){
-            User user = userDao.queryUserById(id);
-            users.add(user);
-        }
+
+
+//        for (Long id : ids){
+//            User user = userDao.queryUserById(id);
+//            users.add(user);
+//        }
+
+            ids.forEach(id->{
+                //我们测试多次查询
+                users.add(userClient.queryUserById(id));
+            });
+
         return users;
     }
 }

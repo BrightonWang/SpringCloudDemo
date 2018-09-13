@@ -24,8 +24,8 @@ import java.util.List;
 @Component
 @Repository
 public class UserDao {
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private RestTemplate restTemplate;
 
     private static final Logger logger = (Logger) LoggerFactory.getLogger(UserDao.class);
 
@@ -48,7 +48,8 @@ public class UserDao {
         long begin = System.currentTimeMillis();
         //直接使用服务名称
         String baseUrl = "http://user-service/user/"+id;
-        User user = restTemplate.getForObject(baseUrl, User.class);
+//        User user = restTemplate.getForObject(baseUrl, User.class);
+        User user = null;
         //服务调用结束时间
         long end = System.currentTimeMillis();
         //记录访问时间
