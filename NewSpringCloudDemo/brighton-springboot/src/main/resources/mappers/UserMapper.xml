@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.brighton.Mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="cn.brighton.entity.User" >
+    <id column="tb_user_id" property="tbUserId" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="birthday" property="birthday" jdbcType="TIMESTAMP" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    tb_user_id, username, password, name, age, sex, birthday, created, updated
+  </sql>
+  <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from tb_user-->
+    <!--where tb_user_id = #{tbUserId,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >-->
+    <!--delete from tb_user-->
+    <!--where tb_user_id = #{tbUserId,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="cn.brighton.entity.User" >-->
+    <!--insert into tb_user (tb_user_id, username, password, -->
+      <!--name, age, sex, birthday, -->
+      <!--created, updated)-->
+    <!--values (#{tbUserId,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, -->
+      <!--#{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{sex,jdbcType=INTEGER}, #{birthday,jdbcType=TIMESTAMP}, -->
+      <!--#{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="cn.brighton.entity.User" >-->
+    <!--insert into tb_user-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides="," >-->
+      <!--<if test="tbUserId != null" >-->
+        <!--tb_user_id,-->
+      <!--</if>-->
+      <!--<if test="username != null" >-->
+        <!--username,-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--password,-->
+      <!--</if>-->
+      <!--<if test="name != null" >-->
+        <!--name,-->
+      <!--</if>-->
+      <!--<if test="age != null" >-->
+        <!--age,-->
+      <!--</if>-->
+      <!--<if test="sex != null" >-->
+        <!--sex,-->
+      <!--</if>-->
+      <!--<if test="birthday != null" >-->
+        <!--birthday,-->
+      <!--</if>-->
+      <!--<if test="created != null" >-->
+        <!--created,-->
+      <!--</if>-->
+      <!--<if test="updated != null" >-->
+        <!--updated,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides="," >-->
+      <!--<if test="tbUserId != null" >-->
+        <!--#{tbUserId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="username != null" >-->
+        <!--#{username,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--#{password,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="name != null" >-->
+        <!--#{name,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="age != null" >-->
+        <!--#{age,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="sex != null" >-->
+        <!--#{sex,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="birthday != null" >-->
+        <!--#{birthday,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="created != null" >-->
+        <!--#{created,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="updated != null" >-->
+        <!--#{updated,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="cn.brighton.entity.User" >-->
+    <!--update tb_user-->
+    <!--<set >-->
+      <!--<if test="username != null" >-->
+        <!--username = #{username,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--password = #{password,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="name != null" >-->
+        <!--name = #{name,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="age != null" >-->
+        <!--age = #{age,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="sex != null" >-->
+        <!--sex = #{sex,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="birthday != null" >-->
+        <!--birthday = #{birthday,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="created != null" >-->
+        <!--created = #{created,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="updated != null" >-->
+        <!--updated = #{updated,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where tb_user_id = #{tbUserId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="cn.brighton.entity.User" >-->
+    <!--update tb_user-->
+    <!--set username = #{username,jdbcType=VARCHAR},-->
+      <!--password = #{password,jdbcType=VARCHAR},-->
+      <!--name = #{name,jdbcType=VARCHAR},-->
+      <!--age = #{age,jdbcType=INTEGER},-->
+      <!--sex = #{sex,jdbcType=INTEGER},-->
+      <!--birthday = #{birthday,jdbcType=TIMESTAMP},-->
+      <!--created = #{created,jdbcType=TIMESTAMP},-->
+      <!--updated = #{updated,jdbcType=TIMESTAMP}-->
+    <!--where tb_user_id = #{tbUserId,jdbcType=INTEGER}-->
+  <!--</update>-->
+</mapper>
