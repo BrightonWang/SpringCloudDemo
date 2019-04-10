@@ -127,6 +127,30 @@ public class User implements Serializable {
         this.updated = updated == null ? null : (Date) updated.clone();
     }
 
+//    public Date getBirthday() {
+//        return birthday;
+//    }
+//
+//    public void setBirthday(Date birthday) {
+//        this.birthday = birthday;
+//    }
+//
+//    public Date getCreated() {
+//        return created;
+//    }
+//
+//    public void setCreated(Date created) {
+//        this.created = created;
+//    }
+//
+//    public Date getUpdated() {
+//        return updated;
+//    }
+//
+//    public void setUpdated(Date updated) {
+//        this.updated = updated;
+//    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
