@@ -11,7 +11,7 @@ target
 *.iml
 
 HELP.md
-/target/
+
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -69,3 +69,5 @@ hs_err_pid*
 
 out
 gen
+/.idea/
+/target/
