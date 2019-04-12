@@ -1,4 +1,5 @@
 HELP.md
+
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -26,7 +27,12 @@ HELP.md
 
 ### VS Code ###
 .vscode/
-### Java template
+### Example user template template
+### Example user template
+
+
+out
+gen### Java template
 # Compiled class file
 *.class
 
