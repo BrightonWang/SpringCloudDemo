@@ -1,15 +1,3 @@
-/DalstonDemo/consul-client/target
-/DalstonDemo/consul-consumer/target
-/DalstonDemo/eureka-client/target
-/DalstonDemo/eureka-consumer/target
-/DalstonDemo/eureka-consumer-ribbon/target
-/DalstonDemo/eureka-server/target
-/DalstonDemo/eureka-server/.idea
-/DalstonDemo/*.log
-/DalstonDemo/.idea
-target
-*.iml
-
 HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -63,9 +51,4 @@ HELP.md
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-### Example user template template
-### Example user template
 
-
-out
-gen
