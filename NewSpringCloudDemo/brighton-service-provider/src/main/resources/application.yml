@@ -5,10 +5,19 @@ spring:
     url: jdbc:mysql://localhost:3306/brighton
     username: root
     password: 112233
-    hikari:
-      maximum-pool-size: 20
-      minimum-idle: 10
-#    driver-class-name: com.mysql.jdbc.Driver
+#    hikari:
+#      maximum-pool-size: 20
+#      minimum-idle: 10
+#    driver-class-name: com.mysql.jdbc.Driver #自动识别
+  application:
+    name: user-service #应用名称,注册到Eureka后服务名称
 mybatis:
   type-aliases-package: com.brighton.service.entity
+eureka:
+  client:
+    service-url: #EurekaServer地址
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    ip-address: 127.0.0.1 #指定自己的IP信息,不指定的话自己会寻找
+    prefer-ip-address: true #当调用getHostname获取实例的hostname时,返回ip而不是host名称
 
