@@ -15,6 +15,8 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
 
@@ -59,7 +61,7 @@
         <!--Eureka客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <version>2.0.1.RELEASE</version>
         </dependency>
         <dependency>

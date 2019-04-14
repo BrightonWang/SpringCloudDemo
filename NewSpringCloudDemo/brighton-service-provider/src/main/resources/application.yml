@@ -1,6 +1,8 @@
 server:
   port: 8081
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     url: jdbc:mysql://localhost:3306/brighton
     username: root
@@ -16,7 +18,7 @@ mybatis:
 eureka:
   client:
     service-url: #EurekaServer地址
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://127.0.0.1:10088/eureka
   instance:
     ip-address: 127.0.0.1 #指定自己的IP信息,不指定的话自己会寻找
     prefer-ip-address: true #当调用getHostname获取实例的hostname时,返回ip而不是host名称
