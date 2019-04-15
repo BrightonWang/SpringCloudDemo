@@ -22,4 +22,7 @@ eureka:
   instance:
     ip-address: 127.0.0.1 #指定自己的IP信息,不指定的话自己会寻找
     prefer-ip-address: true #当调用getHostname获取实例的hostname时,返回ip而不是host名称
+    lease-expiration-duration-in-seconds: 10 # 10秒即过期
+    lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
+    instance-id: ${spring.application.name}:${server.port}
 
