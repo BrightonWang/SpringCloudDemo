@@ -26,10 +26,15 @@ public class UserService {
 
     public List<User> querUserByIds(List<Long> ids){
         ArrayList<User> users = new ArrayList<>();
-        for (Long id : ids) {
-            User user = this.userDao.queryUserById(id);
-            users.add(user);
-        }
+//        for (Long id : ids) {
+//            User user = this.userDao.queryUserById(id);
+//            users.add(user);
+//        }
+
+        ids.forEach(id -> {
+            users.add(userDao.queryUserById(id));
+        });
         return users;
     }
+
 }
