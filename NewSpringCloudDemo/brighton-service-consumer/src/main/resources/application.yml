@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: user-consumer
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true #开启Spring Cloud的重试功能
 eureka:
   client:
     service-url:
@@ -12,4 +16,16 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
-
+user-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 自定义负载均衡策略
+    ConnectTimeout: 250 # Ribbon的连续超时时间
+    ReadTimeout: 1000 # Ribbon的数据读取超时时间
+    OkToRetryOnAllOperations: true #是否对所有操作都进行重试
+    MaxAutoRetriesNextServer: 1 #切换实例的重试次数
+    MaxAutoRetries: 1 # 对当前实例的重试次数
+logging:
+  level:
+    com.brighton.service.dao: debug
+# 设置hystrix的超时时间为6000ms
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 6000

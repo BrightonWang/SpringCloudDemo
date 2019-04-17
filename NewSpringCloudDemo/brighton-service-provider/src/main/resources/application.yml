@@ -25,7 +25,4 @@ eureka:
     lease-expiration-duration-in-seconds: 10 # 10秒即过期
     lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
     instance-id: ${spring.application.name}:${server.port}
-user-service:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 自定义负载均衡策略
 
