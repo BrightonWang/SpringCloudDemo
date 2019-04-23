@@ -38,5 +38,5 @@ feign:
     response:
       enable: true # 开启响应压缩
 # 设置hystrix的超时时间为6000ms
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 6000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 9000
 
