@@ -1,0 +1,23 @@
+server:
+  port: 10010 # 服务端口
+spring:
+  application:
+    name: api-gateway #制定服务名
+#zuul:
+#  routes:
+#    user-service: #这里时路由id, 随便写
+#      path: /user-service/** # 这里是映射路径
+##      url: http://127.0.0.1:8081 # 映射路径对应的实际url地址
+#      serviceId: user-service #指定服务名称
+zuul:
+  prefix: /api # 添加路由前缀
+  routes:
+    user-service: /user-service/** #这里是映射路径
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10088/eureka
+    registry-fetch-interval-seconds: 5 # 获取服务列表的周期: 5s
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
