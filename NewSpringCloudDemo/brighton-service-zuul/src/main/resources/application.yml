@@ -12,13 +12,19 @@ spring:
 zuul:
   prefix: /api # 添加路由前缀
   routes:
-    user-service: /user-service/** #这里是映射路径
+    user-service:
+      path: /user-service/** #这里是映射路径
+#      strip-prefix: false
+      serviceId: user-service
+    user-consumer:
+      path: /user-consumer/** #这里是映射路径
+      serviceId: user-consumer
   host:
-    connect-timeout-millis: 15000 #HTTP连接超时时间要比Hystrix的大
-    socket-timeout-millis: 60000 #socket超时时间
+    connect-timeout-millis: 999999 #HTTP连接超时时间要比Hystrix的大
+    socket-timeout-millis: 999998 #socket超时时间
   retryable: true
 ribbon:
-  ReadTimeout: 2000 #通信超时时间(ms)
+  ReadTimeout: 9999 #通信超时时间(ms)
   ConnectTimeout: 250 #连接超时时间(ms)
   OkToRetryOnAllOperations: true #是否对所有操作重试
   MaxAutoRetriesNextServer: 2 #同一服务不同实例的重试次数
