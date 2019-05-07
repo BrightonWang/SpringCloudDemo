@@ -13,16 +13,18 @@ zuul:
   prefix: /api # 添加路由前缀
   routes:
     user-service:
-      path: /user-service/** #这里是映射路径
+      path: /service/** #这里是映射路径
 #      strip-prefix: false
       serviceId: user-service
     user-consumer:
-      path: /user-consumer/** #这里是映射路径
+      path: /consumer/** #这里是映射路径
       serviceId: user-consumer
   host:
     connect-timeout-millis: 999999 #HTTP连接超时时间要比Hystrix的大
     socket-timeout-millis: 999998 #socket超时时间
   retryable: true
+  ignored-services: user-service
+#  ignored-patterns: /**/user-service/**
 ribbon:
   ReadTimeout: 9999 #通信超时时间(ms)
   ConnectTimeout: 250 #连接超时时间(ms)
