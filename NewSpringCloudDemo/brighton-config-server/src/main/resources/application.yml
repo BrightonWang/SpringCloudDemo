@@ -6,6 +6,6 @@ spring:
       server:
         git:
           uri: https://github.com/BrightonWang/SpringCloudDemo.git
-          search-paths: NewSpringCloudDemo/spring_cloud_config/config-demo
+          search-paths: spring_cloud_config/config-demo
 server:
   port: 10011
