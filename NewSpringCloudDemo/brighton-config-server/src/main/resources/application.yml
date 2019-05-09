@@ -5,9 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/BrightonWang/SpringCloudDemo/tree/master/NewSpringCloudDemo/
+          uri: https://github.com/BrightonWang/SpringCloudDemo.git
           search-paths: spring_cloud_config/config-demo
-          username: username
-          password: password
 server:
   port: 10011

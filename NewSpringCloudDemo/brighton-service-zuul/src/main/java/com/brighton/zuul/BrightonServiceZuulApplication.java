@@ -10,10 +10,10 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableZuulProxy // 开启网关功能
 @EnableDiscoveryClient
 @SpringCloudApplication
-public class BrightonZuulApplication {
+public class BrightonServiceZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BrightonZuulApplication.class, args);
+        SpringApplication.run(BrightonServiceZuulApplication.class, args);
     }
 
 }
