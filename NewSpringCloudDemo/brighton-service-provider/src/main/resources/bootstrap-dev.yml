@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: brighton-service-provider
+  cloud:
+    config:
+      profile: dev
+      label: master
+      url: http://localhost:10011/
+server:
+  port: 8085
