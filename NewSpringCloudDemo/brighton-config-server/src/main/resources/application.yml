@@ -5,8 +5,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/BrightonWang/SpringCloudDemo.git
+          uri: https://gitee.com/BrightonWang/SpringCloudDemo.git
           search-paths: spring_cloud_config/config-demo
+  security:
+    user:
+      password: 123
+      name: user
 server:
   port: 10011
 eureka:
@@ -19,3 +23,4 @@ eureka:
     lease-expiration-duration-in-seconds: 10 # 10秒即过期
     lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
     instance-id: ${spring.application.name}:${server.port}
+

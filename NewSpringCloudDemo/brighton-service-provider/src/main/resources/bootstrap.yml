@@ -9,6 +9,8 @@ spring:
       discovery:
         service-id: config-server
         enabled: true
+      username: user
+      password: 123
   main:
     allow-bean-definition-overriding: true
   datasource:
