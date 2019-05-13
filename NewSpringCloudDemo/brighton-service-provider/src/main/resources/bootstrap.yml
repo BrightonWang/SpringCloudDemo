@@ -1,28 +1,5 @@
 server:
   port: 8082
-spring:
-  cloud:
-    config:
-      profile: dev
-      label: master
-#      url: http://localhost:10011/
-      discovery:
-        service-id: config-server
-        enabled: true
-      username: user
-      password: 123
-  main:
-    allow-bean-definition-overriding: true
-  datasource:
-    url: jdbc:mysql://localhost:3306/brighton
-    username: root
-    password: 112233
-#    hikari:
-#      maximum-pool-size: 20
-#      minimum-idle: 10
-#    driver-class-name: com.mysql.jdbc.Driver #自动识别
-  application:
-    name: user-service #应用名称,注册到Eureka后服务名称
 mybatis:
   type-aliases-package: com.brighton.service.entity
 eureka:
@@ -36,3 +13,27 @@ eureka:
     lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
     instance-id: ${spring.application.name}:${server.port}
 
+spring:
+  cloud:
+    config:
+      profile: dev #指定环境
+      label: master #指定分支
+#      url: http://localhost:10011/
+      discovery:
+        service-id: config-server #config server服务名
+        enabled: true #是否通过服务访问config server
+      username: user #config安全保护用户名
+      password: 123 #config安全保护密码
+      fail-fast: true #优先判断Config Server获取是否正常,并快速响应失败内容
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/brighton
+    username: root
+    password: 112233
+#    hikari:
+#      maximum-pool-size: 20
+#      minimum-idle: 10
+#    driver-class-name: com.mysql.jdbc.Driver #自动识别
+  application:
+    name: user-service #应用名称,注册到Eureka后服务名称
