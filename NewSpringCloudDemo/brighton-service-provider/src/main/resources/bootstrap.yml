@@ -37,3 +37,11 @@ spring:
 #    driver-class-name: com.mysql.jdbc.Driver #自动识别
   application:
     name: user-service #应用名称,注册到Eureka后服务名称
+management: #actuator
+  server:
+    port: 8082
+  endpoints:
+    web:
+      base-path: / #默认是/actuator 前缀,可以修改
+      exposure:
+        include: "*" #打开全部请求端点
