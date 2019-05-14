@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: api-gateway-filter-dynamic
+server:
+  port: 10013
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10089/eureka
+  instance:
+    ip-address: 127.0.0.1 #指定自己的IP信息,不指定的话自己会寻找
+    prefer-ip-address: true #当调用getHostname获取实例的hostname时,返回ip而不是host名称
+    lease-expiration-duration-in-seconds: 10 # 10秒即过期
+    lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
+    instance-id: ${spring.application.name}:${server.port}
+ribbon:
+  ReadTimeout: 9999 #通信超时时间(ms)
+  ConnectTimeout: 250 #连接超时时间(ms)
+  OkToRetryOnAllOperations: true #是否对所有操作重试
+  MaxAutoRetriesNextServer: 2 #同一服务不同实例的重试次数
+  MaxAutoRetries: 1 #同一实例的重试次数
+hystrix.command.execution.isolation.thread.timeoutInMillisecond: 6000 #熔断超时时长: 6000ms
+zuul:
+  prefix: /api #添加路由前缀
+  routes:
+    user-service:
+      path: /userservice/** #映射路径
+      serviceId: user-service
+    user-consumer:
+      path: /consumer/** #映射路径
+      serviceId: user-consumer
+  host:
+    connect-timeout-millis: 999999 #HTTP连接超时时间要比Hystrix的大
+    socket-timeout-millis: 999998 #socket 超时时间
+  retryable: true #开启zuul的重试机制
+  ignored-services: user-service #忽略默认配置的path
+  filter:
+    root: D:\JavaEE\SpringCloudTmp\SpringCloudDemo\NewSpringCloudDemo\brighton-service-zuul-filter-dynamic\filter #指定动态加载的过滤器存储路径
+    interval: 5 #配置动态加载的间隔时间,以秒为单位
